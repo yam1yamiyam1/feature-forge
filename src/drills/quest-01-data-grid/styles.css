@@ -1,0 +1,135 @@
+.dg-wrap {
+  padding: 24px;
+}
+
+.dg-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.dg-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #f1f5f9;
+}
+
+.dg-search {
+  padding: 8px 12px;
+  border: 1px solid #ffffff15;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #ffffff08;
+  color: #f1f5f9;
+  width: 220px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.dg-search:focus {
+  border-color: #ffffff35;
+}
+
+.dg-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.dg-table th {
+  text-align: left;
+  padding: 10px 16px;
+  border-bottom: 1px solid #ffffff0f;
+  color: #64748b;
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+
+.dg-table th:hover {
+  color: #f1f5f9;
+}
+
+.dg-table td {
+  padding: 13px 16px;
+  border-bottom: 1px solid #ffffff08;
+  color: #cbd5e1;
+}
+
+.dg-table tr:last-child td {
+  border-bottom: none;
+}
+
+.dg-table tbody tr {
+  transition: background 0.1s;
+}
+
+.dg-table tbody tr:hover td {
+  background: #ffffff05;
+}
+
+.dg-empty {
+  text-align: center;
+  padding: 48px;
+  color: #334155;
+  font-size: 14px;
+}
+
+.dg-error {
+  padding: 48px;
+  text-align: center;
+  color: #f87171;
+  font-size: 14px;
+}
+
+.dg-retry {
+  margin-top: 12px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: 1px solid #f8717155;
+  background: transparent;
+  color: #f87171;
+  cursor: pointer;
+  font-size: 13px;
+  display: block;
+  margin-inline: auto;
+  transition: background 0.15s;
+}
+
+.dg-retry:hover {
+  background: #f8717111;
+}
+
+/* Skeleton */
+.dg-skeleton td {
+  padding: 13px 16px;
+}
+
+.dg-skeleton-bar {
+  height: 14px;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    #ffffff08 25%,
+    #ffffff12 50%,
+    #ffffff08 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
