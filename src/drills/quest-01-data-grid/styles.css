@@ -36,6 +36,20 @@
   width: 100%;
   border-collapse: collapse;
   font-size: 14px;
+  table-layout: fixed;
+}
+
+.dg-table th:nth-child(1) {
+  width: 22%;
+}
+.dg-table th:nth-child(2) {
+  width: 32%;
+}
+.dg-table th:nth-child(3) {
+  width: 24%;
+}
+.dg-table th:nth-child(4) {
+  width: 22%;
 }
 
 .dg-table th {
@@ -58,9 +72,13 @@
 }
 
 .dg-table td {
+  text-align: left;
   padding: 13px 16px;
   border-bottom: 1px solid #ffffff08;
   color: #cbd5e1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .dg-table tr:last-child td {
@@ -107,19 +125,19 @@
   background: #f8717111;
 }
 
-/* Skeleton */
-.dg-skeleton td {
+.dg-skeleton {
   padding: 13px 16px;
 }
 
-.dg-skeleton-bar {
-  height: 14px;
-  border-radius: 4px;
+.dg-skeleton td {
+  padding: 0;
+  height: 46px;
+  border-bottom: 1px solid #ffffff08;
   background: linear-gradient(
     90deg,
-    #ffffff08 25%,
-    #ffffff12 50%,
-    #ffffff08 75%
+    #ffffff06 25%,
+    #ffffff0e 50%,
+    #ffffff06 75%
   );
   background-size: 200% 100%;
   animation: shimmer 1.4s infinite;
